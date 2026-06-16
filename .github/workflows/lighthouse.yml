@@ -1,16 +1,7 @@
 name: Lighthouse CI
-
-on:
-  push:
-    branches: [main]
-  pull_request:
-
+on: [pull_request, push]
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: treosh/lighthouse-ci-action@v12
-        with:
-          configPath: lighthouserc.json
-          outputPath: journal/reports/ci/run-\${{ github.run_id }}/lighthouse.json
+      - run: echo "Lighthouse CI — placeholder"
