@@ -1,1 +1,7 @@
-# (kopiere exakt den YAML-Inhalt oben)
+name: Semgrep
+on: [pull_request, push]
+jobs:
+  semgrep:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Semgrep — placeholder"
