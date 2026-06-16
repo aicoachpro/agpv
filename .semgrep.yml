@@ -1,0 +1,9 @@
+rules:
+  - id: p/security-audit
+    rule: warn
+  - id: p/secrets
+    rule: warn
+  - id: p/javascript
+    rule: warn
+#  - id: p/owasp-top-ten
+#    rule: warn

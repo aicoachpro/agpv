@@ -1,0 +1,17 @@
+{
+  "environment": "mac",
+  "tools_available": {
+    "eslint": false,
+    "semgrep": false
+  },
+  "paths": {
+    "journal_reports": "journal/reports",
+    "specs": "specs"
+  },
+  "metadata": {
+    "created_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+    "bootstrap_version": "3.0",
+    "stack": "mixed",
+    "deployment_scenario": "solo-mac"
+  }
+}

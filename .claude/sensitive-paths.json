@@ -1,0 +1,12 @@
+{
+  "project": "AGPV Provisionsabrechnung",
+  "patterns": [
+    "src/auth/**",
+    "src/payment/**",
+    "src/**/pii/**",
+    "**/*personal*",
+    "**/*customer*",
+    "**/*billing*"
+  ],
+  "note": "Bitte projektspezifische Pfade ergänzen."
+}

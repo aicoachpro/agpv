@@ -1,0 +1,6 @@
+node_modules/
+dist/
+build/
+journal/reports/
+.venv/
+__pycache__/

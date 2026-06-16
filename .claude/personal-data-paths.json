@@ -1,0 +1,11 @@
+{
+  "project": "AGPV Provisionsabrechnung",
+  "patterns": [
+    "**/user*",
+    "**/customer*",
+    "**/profile*",
+    "**/*pii*",
+    "**/auth/profile/**",
+    "**/billing/**"
+  ]
+}

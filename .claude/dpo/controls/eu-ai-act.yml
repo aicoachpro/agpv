@@ -1,0 +1,10 @@
+# EU AI Act optionaler Kontrollkatalog
+# Dieser Katalog wird nur geladen, wenn er ins Projekt kopiert wurde.
+
+controls:
+  - id: eu-ai-act-1
+    title: "KI-Systemsteckbrief vorhanden"
+    description: "Das Projekt verfügt über ein dokumentierten KI-System-Steckbrief."
+  - id: eu-ai-act-2
+    title: "Human Oversight spezifiziert"
+    description: "Human Oversight für KI-Entscheidungen ist dokumentiert."

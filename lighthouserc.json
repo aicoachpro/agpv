@@ -1,0 +1,29 @@
+{
+  "ci": {
+    "collect": {
+      "url": "http://localhost",
+      "numberOfRuns": 1,
+      "settings": {
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 300,
+          "throughputKbps": 1600,
+          "cpuSlowdownMultiplier": 4
+        }
+      }
+    },
+    "assert": {
+      "assertions": {
+        "categories.performance": ["error", {"minScore": 0.9}],
+        "categories.accessibility": ["error", {"minScore": 0.9}],
+        "metrics.lcp": ["error", {"maxNumericValue": 2500}],
+        "metrics.cumulative_layout_shift": ["error", {"maxNumericValue": 0.1}],
+        "metrics.total_blocking_time": ["error", {"maxNumericValue": 300}]
+      }
+    },
+    "upload": {
+      "target": "filesystem",
+      "outputDir": "journal/reports/ci/run-\${{ github.run_id }}/"
+    }
+  }
+}
